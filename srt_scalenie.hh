@@ -28,6 +28,7 @@ void merge(T *tab, int l, int r, int m)
             else
                 tab[indx_curr]=tab_L[indx_L++];
         }
+        //When one of temporary tables ends, instert rest od elements to main table
         while (indx_L<size_L)
             tab[indx_curr++]=tab_L[indx_L++];
         
